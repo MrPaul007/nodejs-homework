@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-homework",
+  "version": "1.0.0",
+  "description": "Repository created for node.js homeworks.\r Search homeworks in branches",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrPaul007/nodejs-homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrPaul007/nodejs-homework/issues"
+  },
+  "homepage": "https://github.com/MrPaul007/nodejs-homework#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2",
+    "yargs": "^17.5.1"
+  }
+}
