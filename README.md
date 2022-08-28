@@ -1,2 +1,1 @@
-Repository created for node.js homeworks.
-Search homeworks in branches
+Repository created for node.js homework1
