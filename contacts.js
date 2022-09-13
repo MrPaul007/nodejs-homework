@@ -1,4 +1,5 @@
 const fs = require("fs").promises;
+const { table } = require("console");
 const path = require("path");
 const { v4 } = require("uuid");
 
@@ -27,6 +28,7 @@ async function getContactById(contactId) {
 
 async function removeContact(contactId) {
   try {
+    console.log("contact removed");
     const list = await listContacts();
     const filteredList = list.filter(item => item.id !== contactId.toString());
     if (filteredList.length === list.length) {
@@ -45,6 +47,8 @@ async function addContact(name, email, phone) {
     const newList = [...list, { id: v4(), name, email, phone }];
     const dataString = JSON.stringify(newList);
     fs.writeFile(contactsPath, dataString);
+    console.log("contact added");
+    console.table(newList[newList.length - 1]);
   } catch (error) {
     console.log(error);
   }
